@@ -7,7 +7,7 @@ import top.ghsos.tools.idcard.model.ICardModel.CardType;
 public final class IdCardUtils {
 	
 	private IdCardUtils() {
-		// private construct
+		// hy
 	}
 	
 	public static boolean verifyCnSecond(String cardNO) {
