@@ -64,4 +64,5 @@ Slave_SQL_Running
 
 xtrabackup --slave-info
 
-
+screen
+https://www.cnblogs.com/lifegoesonitself/p/3516718.html
