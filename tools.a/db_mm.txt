@@ -1,0 +1,62 @@
+https://blog.csdn.net/lvshanhshan/article/details/80543584
+
+
+https://blog.51cto.com/10642812/2070867
+
+
+
+
+
+
+写好SQL 数据校验语句
+-- CHECKSUM TABLE tbl_name [, tbl_name] ... [QUICK | EXTENDED]
+
+
+
+--
+mysql> STOP SLAVE;
+mysql> START SLAVE;
+mysql> SHOW PROCESSLIST\G
+
+
+shell> mysqladmin shutdown
+shell> mysqld_safe &
+
+
+
+
+--
+https://dev.mysql.com/doc/refman/5.6/en/faqs-replication.html#faq-replication-have-connected-slave
+mysql> FLUSH TABLES WITH READ LOCK;
+mysql> SHOW MASTER STATUS;
+mysql> SELECT MASTER_POS_WAIT('log_name', log_pos);
+mysql> UNLOCK TABLES;
+
+mysql> SHOW VARIABLES LIKE 'binlog_format';
+
+mysql > SHOW MASTER STATUS;
+mysql> SHOW SLAVE HOSTS;
+
+
+https://dev.mysql.com/doc/refman/5.6/en/replication-howto-masterbaseconfig.html
+
+
+
+
+
+
+https://segmentfault.com/a/1190000004452276
+
+
+
+
+
+
+-- 从库  N秒延时。可以防止误操作。。
+CHANGE MASTER TO MASTER_DELAY = N;
+
+
+Slave_IO_Running
+Slave_SQL_Running
+
+
