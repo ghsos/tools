@@ -60,3 +60,8 @@ Slave_IO_Running
 Slave_SQL_Running
 
 
+
+
+xtrabackup --slave-info
+
+
